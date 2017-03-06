@@ -106,7 +106,7 @@ bool YarpCameraControl::stopRecording()
 
 void YarpCameraControl::generateVideoFromImages()
 {
-    auto fps = std::to_string((int)std::round(_camera->AvgFPS()));
+    auto fps = std::to_string(30);//(int)std::round(_camera->AvgFPS()));
     auto width = std::to_string(_camera->ImageWidth());
     auto height = std::to_string(_camera->ImageHeight());
 
